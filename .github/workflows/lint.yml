@@ -37,7 +37,7 @@ jobs:
           
       - name: Check linting
         run: |
-          cd app
+          cd app/acme_ca_server
           pip install -r requirements.txt
           echo -e "[settings]\nline_length=179\nsections=FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER" > .isort.cfg
           # ignore list:
