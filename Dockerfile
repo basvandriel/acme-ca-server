@@ -7,7 +7,9 @@ WORKDIR /app
 EXPOSE 8080/tcp
 ENV PYTHONUNBUFFERED=True
 
-COPY app /app
+COPY requirements.txt /app/requirements.txt
+COPY src/acme_ca_server /app
+
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 ADD --chmod=0644 https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css /app/web/www/libs/
