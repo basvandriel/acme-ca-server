@@ -2,9 +2,10 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, Response, status
 
-import db
-from config import settings
-from logger import logger
+from ... import db
+
+from ...config import settings
+from ...logger import logger
 
 from ..exceptions import ACMEException
 from ..middleware import RequestData, SignedRequest

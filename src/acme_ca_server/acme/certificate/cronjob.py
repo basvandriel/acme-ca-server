@@ -1,9 +1,9 @@
 import asyncio
 
-import db
-import mail
-from config import settings
-from logger import logger
+from ... import db, mail
+
+from ...config import settings
+from ...logger import logger
 
 
 async def start():

@@ -2,8 +2,7 @@ import secrets
 
 from fastapi import status
 
-import db
-
+from ... import db
 from ..exceptions import ACMEException
 
 

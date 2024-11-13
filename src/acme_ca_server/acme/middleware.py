@@ -7,9 +7,6 @@ from fastapi import Body, Header, Request, Response, status
 from jwcrypto.common import base64url_decode
 from pydantic import AnyHttpUrl, BaseModel, ConfigDict, constr, model_validator
 
-# import d
-# fromb
-
 from .. import db
 from ..config import settings
 
